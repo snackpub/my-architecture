@@ -22,6 +22,7 @@
         <mybatis.plus.version>3.2.0</mybatis.plus.version>
         <curator.framework.version>4.0.1</curator.framework.version>
         <protostuff.version>1.6.0</protostuff.version>
+        <captcha.version>1.6.2</captcha.version>
         <mica.auto.version>1.1.0</mica.auto.version>
         <alibaba.cloud.version>2.1.1.RELEASE</alibaba.cloud.version>
         <spring.boot.admin.version>2.2.0</spring.boot.admin.version>
@@ -33,12 +34,12 @@
 
 
     <modules>
+        <module>snackpub-common</module>
         <module>snackpub-auth</module>
         <module>snackpub-getaway</module>
         <module>snackpub-ops</module>
         <module>snackpub-service</module>
         <module>snackpub-service-api</module>
-        <module>snackpub-common</module>
     </modules>
 
     <dependencyManagement>

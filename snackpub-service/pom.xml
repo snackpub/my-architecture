@@ -1,52 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.snackpub</groupId>
-		<artifactId>SnackPub</artifactId>
-		<version>1.0.0</version>
-	</parent>
-	<artifactId>snackpub-service</artifactId>
-	<version>${snackpub.project.version}</version>
-	<name>${project.artifactId}</name>
-	<packaging>pom</packaging>
-	<description>微服务集合</description>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<modules>
-		<module>snackpub-fastdfs</module>
-	</modules>
+    <parent>
+        <groupId>com.snackpub</groupId>
+        <artifactId>SnackPub</artifactId>
+        <version>1.0.0</version>
+    </parent>
 
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
+    <artifactId>snackpub-service</artifactId>
+    <version>${snackpub.project.version}</version>
+    <name>${project.artifactId}</name>
+    <packaging>pom</packaging>
+    <description>微服务集合</description>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
+    <modules>
+        <module>snackpub-desk</module>
+        <module>snackpub-log</module>
+        <module>snackpub-user</module>
+        <module>snackpub-fastdfs</module>
+        <module>snackpub-system</module>
+    </modules>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+    <dependencies>
+        <dependency>
+            <groupId>com.snackpub</groupId>
+            <artifactId>snackpub-common</artifactId>
+            <version>${snackpub.project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
