@@ -1,2 +1,1 @@
-# SnackPub
-零食酒馆
+hello snackpub.
